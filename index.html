@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<div class="container">
+  <!--Header Section-->
+  <div class="page-header">
+    <h1>Food Writing 101
+  <br><small>Because (almost) everyone loves to eat</small></h1>
+  </div>
+  <!--Exercise 1: Three excerpts-->
+
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h4>Exercise 1: Read the excerpts below, keeping the following questions in mind.</h4>
+          <ul>
+            <li>
+              What does the type of food discussed tell you about the piece?
+            </li>
+            <li>
+              Are you meant to find the food delicious? Revolting? Something else?
+            </li>
+            <li>
+              What is the food standing in for? Or is the Thanksgiving turkey <em>just</em> a Thanksgiving turkey?
+            </li>
+          </ul>
+        </div>
+
+        <blockquote>
+          <p>No? You sure?" one of my three older brothers asked me, blushing over his osseous prize.</p>
+
+          <p>"Totally," I nodded from the kitchen sink, the gnawed cuticles of my fingers camouflaged by soap bubbles. "You should have it."</p>
+
+          <p>And so ended this past year's version of the dance we do every time our Thanksgiving bird has been relieved of its meat. Bones and extra bits sit on the fat-slicked carving board, praying for an afterlife. I feign a wish to resurrect it into
+            congee or some other extraordinary something. I "let" my brother and his wife (and their dog) take it to their home in downtown Baltimore, where they’ll make stock out of it and finish every last drop. </p>
+
+          <footer>"Meet the Food Person who Never Makes Stock," by Julia Bainbridge for Food52</footer>
+        </blockquote>
+
+        <blockquote>
+          <p>I might call your spot pumpin' if you got crushed ice
+            <br> In a styrofoam cup with the refill rights
+            <br> So homie no time to chill we got places to try
+            <br> I gotta find some grilled onions and a large side of fries
+            <br> Some guys are mad smart, some guys are tough dudes
+            <br> But me and my homies we mostly care about food
+            <br> Got spots to peruse and never choosin' McDonald's
+            <br>
+          </p>
+          <footer>Lyrics to "Eat Street," People Under the Stairs</footer>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            "Well, of course," said Father, "not everyone is fond of soft-boiled eggs for breakfast. But there are other kinds of eggs. There are sunny-side-up and sunny-side-down eggs."</p>
+
+          <p>"Yes," said Frances, "But sunny-side-up eggs lie on the plate and look up at you in a funny way and sunny-side-down eggs just lie on their stomach and <em>wait</em>."</p>
+          <p>"What about scrambled eggs?" said Father.</p>
+          <p>"Scrambled eggs fall off the fork and roll under the table," said Frances.</p>
+          <p>"I think it is time for you to go to school now," said Mother.</p>
+
+          <footer><em>Bread and Jam for Frances</em> by Russell Hoban</footer>
+        </blockquote>
+      </div>
+    </div>
+    <!--Exercise 2: Parse the Meaning-->
+    <!--<div class="row">-->
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h4>Exercise 2: Pick one of the excerpts above and answer the following questions.</h4>
+          <!-- Turn these into radio buttons/forms!-->
+          <form>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optradio">The Food Person Who Never Makes Stock</label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optradio">Eat Street</label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optradio">Bread and Jam for Frances</label>
+            </div>
+            <div class="form-group">
+              <label for="comment">Is good food writing always primarily about the food? Why or why not?</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="comment">What does the writing make you feel or think about? Does it remind you of anything from your own life?</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="comment">Imagine a cooking show where the competitor is supposed to prepare a meal based on this piece of writing. What should they make? Be sure to elaborate beyond the foods specifically mentioned. </label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button class="btn btn-success" type="save">Save</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--</div>-->
+
+    <!--Exercise 3: Writing exercise-->
+    <!--<div class="row">-->
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <label for="comment">
+                <h4>Exercise 3: Write about a memorable time when you were supposed to eat something you hated. How did it make you feel? Did you eat it? Try to get the reader (your teacher and classmates) to be on your side. </h4></label>
+              <textarea class="form-control" rows="10" id="comment"></textarea>
+            </div>
+            <button class="btn btn-success" type="save">Save</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Page Footer-->
+    <div id="footer" class="row">
+      <div class="col-xs-12">
+        <div id="view" ng-view="">
+        </div>
+        <a href="https://run.plnkr.co/HKLETjzEMu7TZ9b7/">Teacher View</a>
+      </div>
+      <!--End of container-->
+    </div>
+    </div>
+  </div>
+</html>
