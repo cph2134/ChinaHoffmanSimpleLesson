@@ -3,8 +3,8 @@
 
 <head>
   <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="teacher.css"/>
+  <script src="teacher.js"></script>
 </head>
 <!--Header-->
 <div class="container">
@@ -70,43 +70,48 @@
       <div class="form-group">
         <label for="comment">
           <p>Do you like to cook?</p>
-          <textarea class="form-group" rows="2" id="comment"></textarea>
+          <textarea class="form-group" rows="2" class="comment"></textarea>
         </label>
       </div>
       <div class="form-group">
         <label for="comment">
           <p>What is one dish you know how to make from scratch (when in doubt, cereal)?</p>
-          <textarea class="form-group" rows="2" id="comment"></textarea>
+          <textarea class="form-group" rows="2" class="comment"></textarea>
         </label>
       </div>
       <div class="form-group">
         <label for="comment">
           <p>What is one of your favorite foods?</p>
-          <textarea class="form-group" rows="2" id="comment"></textarea>
+          <textarea class="form-group" rows="2" class="comment"></textarea>
         </label>
       </div>
       <div class="form-group">
         <label for="comment">
           <p>What is one food you hate?</p>
-          <textarea class="form-group" rows="2" id="comment"></textarea>
+          <textarea class="form-group" rows="2" class="comment"></textarea>
         </label>
       </div>
     </form>
+      <!-- Student name form for rubric -->
     <div class="row">
       <div class="col-xs-12">
-        <!-- Putting a table inside a form is clearly not the way I am supposed to create a rubric, but to some extent it seems to work? I'm also not sure whether JavaScript would be enough to accomplish this - though maybe if it was just connected to a google form? -->
+
         <h3>
           Student Skills Evaluation
         </h3>
         <p>When your Food Writing 101 lesson is complete, students should have gained fluency in the following skills. Use the rubric to evaluate each student.</p>
-        <Form>
-          <table class="table">
+
             <div class="form-group">
               <label for="studentname" class="sr-only">Student Name</label>
               <input type="text" class="form-control" id="studentname" placeholder="Student Name">
 
             </div>
-            <!-- Student Name -->
+          </div>
+        </div>
+            <!-- rubric description -->
+            <div class="row">
+              <div class="col-xs-8">
+  <table class="table">
             <tbody>
               <tr>
                 <th></th>
@@ -114,66 +119,63 @@
                 <th class="bg-info">Some improvement</th>
                 <th class="bg-success">Significant improvement</th>
               </tr>
-              <tr>
+              <tr class=text-center>
                 <td>Skill 1</td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore1" id="1.1" value="NC">
-                  </label>
+                1
                 </td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore2" id="1.2" value="SI">
-                  </label>
+                  2
                 </td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore3" id="1.3" value="SSI">
-                  </label>
+                3
                 </td>
               </tr>
-              <tr>
+              <tr class=text-center>
                 <td>Skill 2</td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore4" id="2.1" value="NC">
-                  </label>
+                  1
                 </td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore5" id="2.2" value="SI">
-                  </label>
+                  2
                 </td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore6" id="2.3" value="SSI">
-                  </label>
+                  3
                 </td>
               </tr>
-              <tr>
+              <tr class=text-center>
                 <td>Skill 3</td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore7" id="3.1" value="NC">
-                  </label>
+                1
                 </td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore8" id="3.2" value="SI">
-                  </label>
+                2
                 </td>
                 <td>
-                  <label class="radio-inline">
-                    <input type="radio" name="studentscore9" id="3.3" value="SSI">
-                  </label>
+                  3
                 </td>
               </tr>
             </tbody>
           </table>
-        </Form>
+        </div>
+
+        <div class = "col-xs-4" class="rubricScore">
+          <div class="form-group">
+            <label for="skillOneScore" class="sr-only">Score</label>
+              <input type="number" class="form-control" id="skillOneScore" placeholder="score">
+          </div>
+          <div class="form-group">
+            <label for="skillTwoScore" class="sr-only">Score</label>
+              <input type="number" class="form-control" id="skillTwoScore" placeholder="score">
+          </div>
+          <div class="form-group">
+            <label for="skillTwoScore" class="sr-only">Score</label>
+              <input type="number" class="form-control" id="skillTwoScore" placeholder="score">
+          </div>
       </div>
-    </div>
-    <!--Footer: 
+
+
+    <!--Footer:
 Student View-->
     <div id="footer" class="row">
       <div class="col-xs-12">

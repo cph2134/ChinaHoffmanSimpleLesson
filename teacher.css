@@ -1,8 +1,10 @@
+/*Style for teacher page*/
+
 #footer {
   text-align: center;
 }
-.radio-inline  {
-  padding:0 0 25px 35px;
+.rubricScore {
+  padding-top: 200px;
 }
 
 #studentname {
