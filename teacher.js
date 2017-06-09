@@ -1,11 +1,11 @@
 
 
 //borrowed from Tinker
-//helper function
+/* helper function
 function printLog(selector, message){
 	document.querySelector(selector).innerHTML += message + "\n";
 }
-
+*/
 //save name entered to student name to a variable.
 
 function getStudent() {
@@ -15,7 +15,7 @@ function getStudent() {
 }
 
 
-//combine name and score
+//combine name and score - not using
 function makeStudentReport(name, score) {
 	return name + ": " + score;
 }
@@ -46,11 +46,12 @@ function reportStudentScores() {
     }
   }
   document.querySelector('#scorecard').innerHTML += total + "\n";
-	//printLog('#scorecard', total);
+	resetRubric();
 }
 
+function resetRubric() {
+	document.getElementById("studentRubric").reset();
+}
 
-
-//print out student name and score to text box  when submit is clicked and clear all entries.
 //if submit is pressed without a student name, print an alert that says "missing student name!"
 // if submit is pressed without all 3 text boxes filled in, print an alert that says "missing score(s)!"
