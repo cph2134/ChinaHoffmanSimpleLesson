@@ -102,15 +102,15 @@
         <p>When your Food Writing 101 lesson is complete, students should have gained fluency in the following skills. Use the rubric to evaluate each student.</p>
 
             <div class="form-group">
-              <label for="studentname" class="sr-only">Student Name</label>
-              <input type="text" class="form-control" id="studentname" placeholder="Student Name">
+              <label for="studentname"  class="sr-only">Student Name</label>
+              <input type="text" class="form-control" id="studentName" placeholder="Student Name">
 
             </div>
           </div>
         </div>
             <!-- rubric description -->
             <div class="row">
-              <div class="col-xs-8">
+              <div class="col-xs-12">
   <table class="table">
             <tbody>
               <tr>
@@ -130,6 +130,12 @@
                 <td>
                 3
                 </td>
+                <td>
+                  <div class="form-group">
+                    <label for="skillOneScore" class="sr-only">Score</label>
+                      <input type="number" class="form-control" name="rubricScore" id="skillOneScore" placeholder="score">
+                  </div>
+                </td>
               </tr>
               <tr class=text-center>
                 <td>Skill 2</td>
@@ -141,6 +147,12 @@
                 </td>
                 <td>
                   3
+                </td>
+                <td>
+                  <div class="form-group" >
+                    <label for="skillTwoScore" class="sr-only">Score</label>
+                      <input type="number" class="form-control" name="rubricScore" id="skillOneScore" placeholder="score">
+                  </div>
                 </td>
               </tr>
               <tr class=text-center>
@@ -154,27 +166,26 @@
                 <td>
                   3
                 </td>
+                <td>
+                  <div class="form-group">
+                    <label for="skillthreeScore" class="sr-only">Score</label>
+                      <input type="number" class="form-control" name="rubricScore" id="skillOneScore" placeholder="score">
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
-        </div>
+    <div>
+  <button class="btn btn-primary" onclick="reportStudentScores()" type="button">Record</button>
+</div>
+</div>
+</div>
 
-        <div class = "col-xs-4" class="rubricScore">
-          <div class="form-group">
-            <label for="skillOneScore" class="sr-only">Score</label>
-              <input type="number" class="form-control" id="skillOneScore" placeholder="score">
-          </div>
-          <div class="form-group">
-            <label for="skillTwoScore" class="sr-only">Score</label>
-              <input type="number" class="form-control" id="skillTwoScore" placeholder="score">
-          </div>
-          <div class="form-group">
-            <label for="skillTwoScore" class="sr-only">Score</label>
-              <input type="number" class="form-control" id="skillTwoScore" placeholder="score">
-          </div>
-      </div>
-
-
+<!--text box for recording student scores-->
+<div class="form-group">
+  <label for="comment" class="sr-only" >Student Scores</label>
+  <textarea class="form-control" rows="5" class="comment" id="scorecard" ></textarea>
+</div>
     <!--Footer:
 Student View-->
     <div id="footer" class="row">

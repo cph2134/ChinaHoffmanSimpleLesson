@@ -4,13 +4,9 @@
   text-align: center;
 }
 .rubricScore {
-  margin-top: 200px;
+  padding: 100px 0 50px 0;
 }
 
 #studentname {
   margin-top:20px;
-}
-
-h3 {
-color: blue;
 }
