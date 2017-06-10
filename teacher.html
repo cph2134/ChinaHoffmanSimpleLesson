@@ -92,7 +92,7 @@
         </label>
       </div>
     </form>
-      <!-- Student name form for rubric -->
+    <!-- Student name form for rubric -->
     <div class="row">
       <div class="col-xs-12">
 
@@ -100,92 +100,92 @@
           Student Skills Evaluation
         </h3>
         <p>When your Food Writing 101 lesson is complete, students should have gained fluency in the following skills. Use the rubric to evaluate each student.</p>
-<form id="studentRubric" name="rubric">
-            <div class="form-group">
-              <label for="studentname"  class="sr-only">Student Name</label>
-              <input type="text" class="form-control" name="student" id="studentName" placeholder="Student Name">
+        <form id="studentRubric" name="rubric">
+          <div class="form-group">
+            <label for="studentname" class="sr-only">Student Name</label>
+            <input type="text" class="form-control" name="student" id="studentName" placeholder="Student Name">
 
-            </div>
           </div>
-        </div>
-            <!-- rubric description -->
-            <div class="row">
-              <div class="col-xs-12">
-  <table class="table">
-            <tbody>
-              <tr>
-                <th></th>
-                <th class="bg-warning">No change</th>
-                <th class="bg-info">Some improvement</th>
-                <th class="bg-success">Significant improvement</th>
-              </tr>
-              <tr class=text-center>
-                <td>Skill 1</td>
-                <td>
+      </div>
+    </div>
+    <!-- rubric description -->
+    <div class="row">
+      <div class="col-xs-12">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th></th>
+              <th class="bg-warning">No change</th>
+              <th class="bg-info">Some improvement</th>
+              <th class="bg-success">Significant improvement</th>
+            </tr>
+            <tr class=text-center>
+              <td>Skill 1</td>
+              <td>
                 1
-                </td>
-                <td>
-                  2
-                </td>
-                <td>
-                3
-                </td>
-                <td>
-                  <div class="form-group">
-                    <label for="skillOneScore" class="sr-only">Score</label>
-                      <input type="number" class="form-control" name="rubricScore" id="skillOneScore" placeholder="score">
-                  </div>
-                </td>
-              </tr>
-              <tr class=text-center>
-                <td>Skill 2</td>
-                <td>
-                  1
-                </td>
-                <td>
-                  2
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  <div class="form-group" >
-                    <label for="skillTwoScore" class="sr-only">Score</label>
-                      <input type="number" class="form-control" name="rubricScore" id="skillTwoScore" placeholder="score">
-                  </div>
-                </td>
-              </tr>
-              <tr class=text-center>
-                <td>Skill 3</td>
-                <td>
-                1
-                </td>
-                <td>
+              </td>
+              <td>
                 2
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  <div class="form-group">
-                    <label for="skillthreeScore" class="sr-only">Score</label>
-                      <input type="number" class="form-control" name="rubricScore" id="skillThreeScore" placeholder="score">
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    <div>
-  <button class="btn btn-primary" onclick="validateAndReportScores()" type="button">Record</button>
-</div>
-</div>
-</div>
-</form>
-<!--text box for recording student scores-->
-<div class="form-group">
-  <label for="comment" class="sr-only" >Student Scores</label>
-  <textarea class="form-control" rows="5" class="comment" id="scorecard" ></textarea>
-</div>
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                <div class="form-group">
+                  <label for="skillOneScore" class="sr-only">Score</label>
+                  <input type="number" class="form-control" name="rubricScore" id="skillOneScore" placeholder="score">
+                </div>
+              </td>
+            </tr>
+            <tr class=text-center>
+              <td>Skill 2</td>
+              <td>
+                1
+              </td>
+              <td>
+                2
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                <div class="form-group">
+                  <label for="skillTwoScore" class="sr-only">Score</label>
+                  <input type="number" class="form-control" name="rubricScore" id="skillTwoScore" placeholder="score">
+                </div>
+              </td>
+            </tr>
+            <tr class=text-center>
+              <td>Skill 3</td>
+              <td>
+                1
+              </td>
+              <td>
+                2
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                <div class="form-group">
+                  <label for="skillthreeScore" class="sr-only">Score</label>
+                  <input type="number" class="form-control" name="rubricScore" id="skillThreeScore" placeholder="score">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <button class="btn btn-primary" onclick="validateAndReportScores()" type="button">Record</button>
+        </div>
+      </div>
+    </div>
+    </form>
+    <!--text box for recording student scores-->
+    <div class="form-group">
+      <label for="comment" class="sr-only">Student Scores</label>
+      <textarea class="form-control" rows="5" class="comment" id="scorecard"></textarea>
+    </div>
     <!--Footer:
 Student View-->
     <div id="footer" class="row">
@@ -195,6 +195,6 @@ Student View-->
       </div>
     </div>
   </div>
-  </div>
+</div>
 
 </html>
