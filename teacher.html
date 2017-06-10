@@ -100,10 +100,10 @@
           Student Skills Evaluation
         </h3>
         <p>When your Food Writing 101 lesson is complete, students should have gained fluency in the following skills. Use the rubric to evaluate each student.</p>
-<form id="studentRubric">
+<form id="studentRubric" name="rubric">
             <div class="form-group">
               <label for="studentname"  class="sr-only">Student Name</label>
-              <input type="text" class="form-control" id="studentName" placeholder="Student Name">
+              <input type="text" class="form-control" name="student" id="studentName" placeholder="Student Name">
 
             </div>
           </div>
@@ -151,7 +151,7 @@
                 <td>
                   <div class="form-group" >
                     <label for="skillTwoScore" class="sr-only">Score</label>
-                      <input type="number" class="form-control" name="rubricScore" id="skillOneScore" placeholder="score">
+                      <input type="number" class="form-control" name="rubricScore" id="skillTwoScore" placeholder="score">
                   </div>
                 </td>
               </tr>
@@ -169,14 +169,14 @@
                 <td>
                   <div class="form-group">
                     <label for="skillthreeScore" class="sr-only">Score</label>
-                      <input type="number" class="form-control" name="rubricScore" id="skillOneScore" placeholder="score">
+                      <input type="number" class="form-control" name="rubricScore" id="skillThreeScore" placeholder="score">
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
     <div>
-  <button class="btn btn-primary" onclick="reportStudentScores()" type="button">Record</button>
+  <button class="btn btn-primary" onclick="validateAndReportScores()" type="button">Record</button>
 </div>
 </div>
 </div>
